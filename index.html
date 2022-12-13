@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/style.css" />
+		<link rel="stylesheet" href="/src/scrollbar.css" />
+		<meta
+			name="description"
+			content="I'm a software engineer and full stack web developer who loves learning new technologies and build stuff with it. I love working on projects as it helps me hone my craft further. I enjoy watching sports especially cricket. Trying to improve myself a little bit everyday :)"
+		/>
+		<title>
+			Royston Rodrigues - Software Engineer and Full Stack Web Developer
+		</title>
+	</head>
+	<body class="h-full">
+		<main
+			class="flex h-full w-full flex-col items-center justify-center bg-gray-200 p-4"
+		>
+			<!-- Mobile front -->
+			<div
+				id="mobile-front"
+				class="relative flex h-full max-h-[666px] w-full max-w-[320px] flex-col items-center justify-between overflow-hidden rounded-[32px] border-8 border-black bg-gradient-to-r shadow-lg shadow-black"
+			>
+				<!-- Top components - notification, notch and indicator -->
+				<div id="top-components" class="relative w-full">
+					<!-- Notification -->
+					<div id="notification" class="absolute top-[6px] left-3">
+						<ul
+							class="flex flex-row items-start justify-start space-x-2 text-white"
+						>
+							<li>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-4 w-4"
+								>
+									<path
+										d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z"
+									/>
+								</svg>
+							</li>
+							<li class="relative">
+								<span id="time" class="absolute top-0 text-xs font-medium"
+									>12:00</span
+								>
+							</li>
+						</ul>
+					</div>
+					<!-- Notch -->
+					<div
+						id="notch"
+						class="relative mx-auto flex h-6 w-32 rounded-b-2xl bg-black"
+					>
+						<!-- Earpiece -->
+						<div
+							id="earpiece"
+							class="m-auto h-2 w-12 rounded border-2 border-gray-800 bg-gray-700"
+						></div>
+						<!-- Front camera -->
+						<div
+							id="front-camera"
+							class="absolute right-3 top-1 flex h-4 w-4 rounded-full border-2 border-gray-800 bg-gray-700"
+						>
+							<div class="m-auto h-2 w-2 rounded-full bg-gray-900"></div>
+						</div>
+					</div>
+					<!-- Indicator -->
+					<div id="indicator" class="absolute top-[6px] right-3">
+						<ul
+							class="flex flex-row items-start justify-end space-x-2 text-white"
+						>
+							<li>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-4 w-4"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M1.371 8.143c5.858-5.857 15.356-5.857 21.213 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.06 0c-4.98-4.979-13.053-4.979-18.032 0a.75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182c4.1-4.1 10.749-4.1 14.85 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.062 0 8.25 8.25 0 00-11.667 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.204 3.182a6 6 0 018.486 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0 3.75 3.75 0 00-5.304 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182a1.5 1.5 0 012.122 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0l-.53-.53a.75.75 0 010-1.06z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</li>
+							<li>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-4 w-4"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</li>
+							<li>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-4 w-4"
+								>
+									<path
+										d="M4.5 9.75a.75.75 0 00-.75.75V15c0 .414.336.75.75.75h6.75A.75.75 0 0012 15v-4.5a.75.75 0 00-.75-.75H4.5z"
+									/>
+									<path
+										fill-rule="evenodd"
+										d="M3.75 6.75a3 3 0 00-3 3v6a3 3 0 003 3h15a3 3 0 003-3v-.037c.856-.174 1.5-.93 1.5-1.838v-2.25c0-.907-.644-1.664-1.5-1.837V9.75a3 3 0 00-3-3h-15zm15 1.5a1.5 1.5 0 011.5 1.5v6a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-6a1.5 1.5 0 011.5-1.5h15z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Screen -->
+				<div id="screen" class="h-full w-full overflow-auto">
+					<!-- Home -->
+					<div
+						id="home"
+						class="flex h-full w-full flex-col items-center justify-between"
+					>
+						<!-- Search bar -->
+						<div id="search-bar-container" class="w-full px-4 pt-8">
+							<div
+								id="search-bar"
+								class="flex w-full flex-row items-center justify-center space-x-2 rounded-full bg-white p-2 text-gray-500"
+							>
+								<span class="">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</span>
+								<p class="w-full">Search...</p>
+								<span class="">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"
+										/>
+										<path
+											d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+						<!-- Clock -->
+						<div id="clock" class="w-full text-center text-white">
+							<p id="time" class="text-7xl font-thin">12:00</p>
+							<div
+								class="mt-2 flex flex-row items-center justify-center space-x-4"
+							>
+								<p id="date">Dec 10</p>
+								<p id="day">Sat</p>
+							</div>
+						</div>
+						<!-- Application icons -->
+						<div id="application-icons" class="w-full">
+							<ul class="grid grid-cols-4 gap-y-8">
+								<!-- File manager (projects) icon -->
+								<li
+									id="projects-icon"
+									class="mx-auto rounded-2xl bg-orange-500 p-2 hover:cursor-pointer"
+								>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="h-8 w-8 text-white"
+										>
+											<path
+												d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z"
+											/>
+										</svg>
+									</span>
+								</li>
+								<!-- Browser (profile) icon -->
+								<li
+									id="profile-icon"
+									class="mx-auto rounded-2xl bg-blue-500 p-2 hover:cursor-pointer"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-8 w-8 text-white"
+									>
+										<path
+											d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z"
+										/>
+									</svg>
+								</li>
+								<!-- Play store (skills) icon -->
+								<li
+									id="skills-icon"
+									class="mx-auto rounded-2xl bg-white p-2 hover:cursor-pointer"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-8 w-8 text-green-500"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</li>
+								<!-- Mail (form) icon -->
+								<li
+									id="form-icon"
+									class="mx-auto rounded-2xl bg-indigo-600 p-2 hover:cursor-pointer"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-8 w-8 text-white"
+									>
+										<path
+											d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+										/>
+										<path
+											d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+										/>
+									</svg>
+								</li>
+								<!-- Phone (contact) -->
+								<li
+									id="contact-icon"
+									class="mx-auto rounded-2xl bg-green-500 p-2 hover:cursor-pointer"
+								>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="h-8 w-8 text-white"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</span>
+								</li>
+								<!-- Message (blog) icon -->
+								<li
+									id="blog-icon"
+									class="mx-auto rounded-2xl bg-teal-400 p-2 hover:cursor-pointer"
+								>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="h-8 w-8 text-white"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</span>
+								</li>
+								<!-- Camera icon -->
+								<li
+									id="camera-icon"
+									class="mx-auto rounded-2xl bg-red-500 p-2 hover:cursor-pointer"
+								>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="h-8 w-8 text-white"
+										>
+											<path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+											<path
+												fill-rule="evenodd"
+												d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</span>
+								</li>
+								<!-- Settings icon -->
+								<li
+									id="settings-icon"
+									class="mx-auto rounded-2xl bg-white p-2 hover:cursor-pointer"
+								>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="h-8 w-8 text-gray-500"
+										>
+											<path
+												d="M17.004 10.407c.138.435-.216.842-.672.842h-3.465a.75.75 0 01-.65-.375l-1.732-3c-.229-.396-.053-.907.393-1.004a5.252 5.252 0 016.126 3.537zM8.12 8.464c.307-.338.838-.235 1.066.16l1.732 3a.75.75 0 010 .75l-1.732 3.001c-.229.396-.76.498-1.067.16A5.231 5.231 0 016.75 12c0-1.362.519-2.603 1.37-3.536zM10.878 17.13c-.447-.097-.623-.608-.394-1.003l1.733-3.003a.75.75 0 01.65-.375h3.465c.457 0 .81.408.672.843a5.252 5.252 0 01-6.126 3.538z"
+											/>
+											<path
+												fill-rule="evenodd"
+												d="M21 12.75a.75.75 0 000-1.5h-.783a8.22 8.22 0 00-.237-1.357l.734-.267a.75.75 0 10-.513-1.41l-.735.268a8.24 8.24 0 00-.689-1.191l.6-.504a.75.75 0 10-.964-1.149l-.6.504a8.3 8.3 0 00-1.054-.885l.391-.678a.75.75 0 10-1.299-.75l-.39.677a8.188 8.188 0 00-1.295-.471l.136-.77a.75.75 0 00-1.477-.26l-.136.77a8.364 8.364 0 00-1.377 0l-.136-.77a.75.75 0 10-1.477.26l.136.77c-.448.121-.88.28-1.294.47l-.39-.676a.75.75 0 00-1.3.75l.392.678a8.29 8.29 0 00-1.054.885l-.6-.504a.75.75 0 00-.965 1.149l.6.503a8.243 8.243 0 00-.689 1.192L3.8 8.217a.75.75 0 10-.513 1.41l.735.267a8.222 8.222 0 00-.238 1.355h-.783a.75.75 0 000 1.5h.783c.042.464.122.917.238 1.356l-.735.268a.75.75 0 10.513 1.41l.735-.268c.197.417.428.816.69 1.192l-.6.504a.75.75 0 10.963 1.149l.601-.505c.326.323.679.62 1.054.885l-.392.68a.75.75 0 101.3.75l.39-.679c.414.192.847.35 1.294.471l-.136.771a.75.75 0 101.477.26l.137-.772a8.376 8.376 0 001.376 0l.136.773a.75.75 0 101.477-.26l-.136-.772a8.19 8.19 0 001.294-.47l.391.677a.75.75 0 101.3-.75l-.393-.679a8.282 8.282 0 001.054-.885l.601.504a.75.75 0 10.964-1.15l-.6-.503a8.24 8.24 0 00.69-1.191l.735.268a.75.75 0 10.512-1.41l-.734-.268c.115-.438.195-.892.237-1.356h.784zm-2.657-3.06a6.744 6.744 0 00-1.19-2.053 6.784 6.784 0 00-1.82-1.51A6.704 6.704 0 0012 5.25a6.801 6.801 0 00-1.225.111 6.7 6.7 0 00-2.15.792 6.784 6.784 0 00-2.952 3.489.758.758 0 01-.036.099A6.74 6.74 0 005.251 12a6.739 6.739 0 003.355 5.835l.01.006.01.005a6.706 6.706 0 002.203.802c.007 0 .014.002.021.004a6.792 6.792 0 002.301 0l.022-.004a6.707 6.707 0 002.228-.816 6.781 6.781 0 001.762-1.483l.009-.01.009-.012a6.744 6.744 0 001.18-2.064c.253-.708.39-1.47.39-2.264a6.74 6.74 0 00-.408-2.308z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Phone (contact) page -->
+					<div
+						id="contact"
+						class="hidden h-full w-full overflow-auto bg-gray-100"
+					>
+						<ul class="w-full">
+							<li
+								class="flex flex-row items-center justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-gray-800 p-2"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+										/>
+										<path
+											d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3">
+									<p class="font-medium">Email address</p>
+									<p class="text-sm text-gray-600">
+										roystonrodrigues24@gmail.com
+									</p>
+								</div>
+							</li>
+							<li
+								class="flex flex-row items-center justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-gray-800 p-2">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3">
+									<p class="font-medium">Linkedin</p>
+									<a
+										class="text-sm text-gray-600"
+										href="https://www.linkedin.com/in/royston-rodrigues-2a17371a6/"
+										>royston-rodrigues-2a17371a6</a
+									>
+								</div>
+							</li>
+							<li
+								class="flex flex-row items-center justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-gray-800 p-2"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3">
+									<p class="font-medium">Github</p>
+									<a
+										class="text-sm text-gray-600"
+										href="https://github.com/NoobProgrammerRoy"
+										>NoobProgrammerRoy</a
+									>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Mail (form) page -->
+					<div id="form" class="hidden h-full w-full overflow-auto bg-gray-100">
+						<form
+							class="flex h-full w-full flex-col items-start justify-start p-2"
+							netlify
+						>
+							<div
+								class="flex w-full flex-row items-center justify-between pb-2"
+							>
+								<p class="w-full text-2xl font-medium">Compose</p>
+								<button>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div
+								class="flex w-full flex-row items-center justify-start border-b border-gray-400 pb-2"
+							>
+								<label for="from" class="mr-3 text-gray-500">From</label>
+								<input
+									class="w-full bg-gray-100 outline-none"
+									type="email"
+									name="from"
+									placeholder="Email address"
+									required
+									maxlength="60"
+								/>
+							</div>
+							<div class="w-full border-b border-gray-400 py-2">
+								<label class="hidden" for="subject">Subject</label>
+								<input
+									class="block w-full bg-gray-100 outline-none"
+									type="text"
+									name="subject"
+									placeholder="Subject"
+									required
+									maxlength="60"
+								/>
+							</div>
+							<div class="h-full w-full py-2">
+								<label class="hidden" for="compose-email">Compose email</label>
+								<textarea
+									class="h-full w-full resize-none bg-gray-100 outline-none"
+									name="compose-email"
+									placeholder="Compose email"
+									required
+									maxlength="500"
+								></textarea>
+							</div>
+						</form>
+					</div>
+
+					<!-- Camera page -->
+					<div
+						id="camera"
+						class="flex hidden h-full w-full flex-col items-start justify-start overflow-auto bg-gray-100"
+					>
+						<div
+							class="flex w-full flex-row items-center justify-between space-x-2 bg-black py-2 text-white"
+						>
+							<span
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+							<span class="text-sm font-thin">HDR</span>
+							<span
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+							<span
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+						</div>
+						<video class="h-full w-full bg-black"></video>
+						<div
+							class="flex w-full flex-row items-center justify-center bg-black py-4"
+						>
+							<span class="flex h-16 w-16 rounded-full bg-white">
+								<span
+									class="m-auto h-14 w-14 rounded-full border-2 border-black bg-white"
+								></span>
+							</span>
+						</div>
+					</div>
+
+					<!-- Settings page -->
+					<div
+						id="settings"
+						class="hidden h-full w-full overflow-auto bg-gray-100"
+					>
+						<p class="border-b border-gray-400 p-2 text-center font-medium">
+							Settings
+						</p>
+						<ul>
+							<li
+								class="flex flex-row items-start justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-green-500 p-2"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3">
+									<p class="font-medium">About phone</p>
+									<p class="text-sm text-gray-600">
+										rPhone is a flagship smartphone designed by Royston
+										Rodrigues. It has been made using the latest technologies
+										such as HTML5, Tailwind CSS and Heroicons.
+									</p>
+								</div>
+							</li>
+							<li
+								class="flex flex-row items-start justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-red-500 p-2"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3">
+									<p class="font-medium">Version</p>
+									<p class="text-sm text-gray-600">1.0.0</p>
+								</div>
+							</li>
+							<li
+								class="flex flex-row items-start justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-indigo-600 p-2"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											d="M18.75 12.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12 6a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 0112 6zM12 18a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 0112 18zM3.75 6.75h1.5a.75.75 0 100-1.5h-1.5a.75.75 0 000 1.5zM5.25 18.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 010 1.5zM3 12a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 013 12zM9 3.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zM12.75 12a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zM9 15.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3">
+									<p class="font-medium">Theme</p>
+									<div
+										class="mt-2 flex flex-row items-center justify-start space-x-2"
+									>
+										<button
+											id="toggle-theme"
+											value="from-indigo-500 to-green-600"
+											class="h-6 w-6 rounded-full border-2 border-gray-400 bg-gradient-to-r from-indigo-500 to-green-600 outline-none focus:border-black"
+										></button>
+										<button
+											id="toggle-theme"
+											value="from-red-500 to-violet-600"
+											class="h-6 w-6 rounded-full border-2 border-gray-400 bg-gradient-to-r from-red-500 to-violet-600 outline-none focus:border-black"
+										></button>
+										<button
+											id="toggle-theme"
+											value="from-yellow-400 to-red-600"
+											class="h-6 w-6 rounded-full border-2 border-gray-400 bg-gradient-to-r from-yellow-400 to-red-600 outline-none focus:border-black"
+										></button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Message (blog) page -->
+					<div id="blog" class="hidden h-full w-full overflow-auto bg-gray-100">
+						<p class="border-b border-gray-400 p-2 text-center font-medium">
+							Messages
+						</p>
+						<ul>
+							<li
+								class="flex w-full flex-row items-start justify-start border-b border-gray-400 p-2"
+							>
+								<span class="rounded-full bg-gray-400 p-2"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="h-6 w-6 text-white"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+										/>
+									</svg>
+								</span>
+								<div class="ml-3 w-full">
+									<div
+										class="flex flex-row items-center justify-between space-x-2"
+									>
+										<p class="font-medium">My new portfolio</p>
+										<span class="text-xs text-gray-400">12-12-2022</span>
+									</div>
+									<p class="mt-2 text-sm text-gray-600">
+										Hi everyone, this is my first message on rPhone. Be sure to
+										check in once in a while as I'll be posting more messages
+										here soon. Really enjoyed working on this new website. It
+										was rather relaxing and enjoyable working on something
+										creative.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Play store (skills) page -->
+					<div
+						id="skills"
+						class="hidden h-full w-full overflow-auto bg-gray-100"
+					>
+						<div class="flex flex-row items-center justify-start space-x-6 p-2">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22H21a.75.75 0 010 1.5H4.81l6.22 6.22a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+							<p class="w-full text-sm font-medium">Skills</p>
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
+									/>
+								</svg>
+							</span>
+						</div>
+						<ul>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="html.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">HTML</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Markup language
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">4</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="css.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">CSS</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Stylesheet language
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">3.75</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="js.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">Javascript</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Programming language
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">4.25</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="react.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">React.js</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; JS library &#x2022; User interfaces
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">3.75</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="nodejs.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">Node.js</p>
+									<p class="py-1 text-xs text-gray-600">&#x2022; JS Runtime</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">3.75</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="python.webp" alt="" class="block h-12 w-12" />
+								</div>
+
+								<div class="ml-3">
+									<p class="font-medium">Python</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Programming langauge
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">3.75</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="java.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">Java</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Programming language
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">4.5</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="mysql.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">MySQL</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Database &#x2022; RDBMS
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">4.25</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="mongodb.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">MongoDB</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Database &#x2022; NoSQL
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">3.5</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="spring.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">Spring</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Web framework &#x2022; Java
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">4</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="docker.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">Docker</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; OS Virtualization &#x2022; Containers
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">3.5</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+							<li class="flex flex-row items-center justify-start p-2">
+								<div class="overflow-hidden rounded-2xl bg-white p-2 shadow">
+									<img src="git.webp" alt="" class="block h-12 w-12" />
+								</div>
+								<div class="ml-3">
+									<p class="font-medium">Git</p>
+									<p class="py-1 text-xs text-gray-600">
+										&#x2022; Version control
+									</p>
+									<p
+										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
+									>
+										<span class="text-sm font-medium">4</span>
+										<span>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="h-3 w-3"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- File manager (projects) page -->
+					<div
+						id="projects"
+						class="hidden h-full w-full overflow-auto bg-gray-100"
+					>
+						<p
+							class="sticky top-0 border-b border-gray-400 bg-gray-100 p-2 text-2xl font-medium"
+						>
+							File manager
+						</p>
+						<ul>
+							<li class="p-2">
+								<div class="shadow">
+									<img src="ocp.webp" alt="" class="block h-32 w-full" />
+									<div class="bg-white p-2">
+										<p class="font-medium">Oracle Certified Professional</p>
+										<p class="mt-2 text-sm text-gray-600">
+											Java SE 11 Developer (1Z0-819)
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="p-2">
+								<div class="shadow">
+									<img src="cloudchat.webp" alt="" class="block h-32 w-full" />
+									<div class="bg-white p-2">
+										<p class="font-medium">Cloudchat - Social Media App</p>
+										<p class="mt-2 text-sm text-gray-600">
+											Cloudchat is a social media app that allows users to
+											create custom chat rooms and have conversations with
+											people online. Features include Google Authentication,
+											Light/Dark modes and a simplistic and responsive UI. Made
+											using Svelte.js, Firebase and Tailwind CSS
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="p-2">
+								<div class="shadow">
+									<img src="pokepedia.webp" alt="" class="block h-32 w-full" />
+									<div class="bg-white p-2">
+										<p class="font-medium">Pokepedia - Pokemon Encyclopedia</p>
+										<p class="mt-2 text-sm text-gray-600">
+											Pokepedia allows users to search for their favourite
+											Pokemon and get various statistical information about them
+											such as Stats, Pokedex info, Type matchups and more. Users
+											can also bookmark their favourite pokemon for easier
+											lookup. Made using React.js and Tailwind CSS and is
+											powered by the PokeAPI.
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Browser (profile) page -->
+					<div
+						id="profile"
+						class="hidden h-full w-full overflow-auto bg-gray-100"
+					>
+						<div class="p-2">
+							<div
+								class="flex w-full flex-row items-center justify-center space-x-2 rounded-full bg-white p-2 text-gray-500 shadow-md"
+							>
+								<span class="">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</span>
+								<p class="w-full">Royston Rodrigues</p>
+								<span class="">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"
+										/>
+										<path
+											d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+						<div class="mx-2 my-4 border-b border-gray-400">
+							<p class="text-xl text-blue-700">Royston Rodrigues</p>
+							<p class="py-2 text-sm">
+								Hello, I'm royston rodrigues. I'm a software engineer and full
+								stack web developer.
+							</p>
+						</div>
+						<div class="mx-2 my-4 border-b border-gray-400">
+							<p class="text-xl text-blue-700">About Me</p>
+							<p class="py-2 text-sm">
+								I'm a software engineer and full stack web developer who loves
+								learning new technologies and build stuff with it. I love
+								working on projects as it helps me hone my craft further. I
+								enjoy watching sports especially cricket. Trying to improve
+								myself a little bit everyday :)
+							</p>
+						</div>
+						<div class="mx-2 my-4 border-b border-gray-400">
+							<p class="text-xl text-blue-700">Work Experience</p>
+							<p class="py-2 text-sm">
+								Currently working as a software engineer at LTIMindtree
+							</p>
+						</div>
+						<div class="mx-2 my-4 border-b border-gray-400">
+							<p class="text-xl text-blue-700">Professional Certifications</p>
+							<p class="py-2 text-sm">
+								Oracle certified professional - Java SE 11 Developer (1Z0-819)
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bottom navigation -->
+				<nav id="navigation-bottom" class="w-full">
+					<ul
+						class="flex flex-row items-center justify-around pb-2 pt-4 text-white"
+					>
+						<li class="hover:cursor-pointer hover:text-gray-200">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-6 w-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+								/>
+							</svg>
+						</li>
+						<li
+							id="navigation-home"
+							class="hover:cursor-pointer hover:text-gray-200"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-6 w-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+								/>
+							</svg>
+						</li>
+						<li
+							id="navigation-back"
+							class="hover:cursor-pointer hover:text-gray-200"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-6 w-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+								/>
+							</svg>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Mobile rear -->
+			<div
+				id="mobile-rear"
+				class="relative hidden h-full max-h-[666px] w-full max-w-[320px] flex-col items-center justify-between overflow-hidden rounded-[32px] border-8 border-black bg-black shadow-lg shadow-black"
+			>
+				<!-- Camera -->
+				<div
+					id="camera-set"
+					class="absolute left-6 top-4 flex flex-row items-center justify-start space-x-6"
+				>
+					<div
+						id="rear-camera"
+						class="flex h-10 w-10 rounded-full border-2 border-gray-700 bg-gray-900"
+					>
+						<div class="m-auto flex h-5 w-5 rounded-full bg-gray-700">
+							<div class="m-auto h-2 w-2 rounded-full bg-gray-500"></div>
+						</div>
+					</div>
+					<div id="flash" class="h-3 w-3 rounded-full bg-gray-300"></div>
+				</div>
+				<!-- Finger print -->
+				<div id="finger-print" class="mt-36">
+					<div
+						class="mx-auto h-12 w-12 rounded-2xl border-2 border-gray-700"
+					></div>
+					<p class="mt-8 text-2xl font-thin text-gray-300">rPhone</p>
+				</div>
+				<!-- Tag -->
+				<p
+					class="absolute bottom-10 left-0 w-full text-center text-xs font-thin text-gray-400"
+				>
+					Designed by Royston
+				</p>
+			</div>
+			<!-- Turn -->
+			<button id="turn-phone-button" class="mt-4 block">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="h-8 w-8 text-gray-600"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+					/>
+				</svg>
+			</button>
+		</main>
+		<script type="module" src="/src/index.ts"></script>
+	</body>
+</html>

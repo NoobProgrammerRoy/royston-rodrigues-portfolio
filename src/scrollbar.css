@@ -1,0 +1,17 @@
+@media (width > 767px) {
+	::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: rgb(229, 231, 235);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: rgb(107, 114, 128);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background-color: rgb(55, 65, 81);
+	}
+}
