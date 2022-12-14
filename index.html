@@ -18,6 +18,10 @@
 		<main
 			class="flex h-full w-full flex-col items-center justify-center bg-gray-200 p-4"
 		>
+			<!-- Title - hidden -->
+			<h1 class="hidden">
+				Royston Rodrigues - Software Engineer and Full Stack Web Developer
+			</h1>
 			<!-- Mobile front -->
 			<div
 				id="mobile-front"
@@ -432,7 +436,7 @@
 							<div
 								class="flex w-full flex-row items-center justify-between pb-2"
 							>
-								<p class="w-full text-2xl font-medium">Compose</p>
+								<h2 class="w-full text-2xl font-medium">Compose</h2>
 								<button>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -456,6 +460,7 @@
 									name="from"
 									placeholder="Email address"
 									required
+									pattern="[a-zA-Z0-9@\.]+"
 									maxlength="60"
 								/>
 							</div>
@@ -467,6 +472,7 @@
 									name="subject"
 									placeholder="Subject"
 									required
+									pattern="[a-zA-Z0-9\s]+"
 									maxlength="60"
 								/>
 							</div>
@@ -537,13 +543,37 @@
 						</div>
 						<video class="h-full w-full bg-black"></video>
 						<div
-							class="flex w-full flex-row items-center justify-center bg-black py-4"
+							class="flex w-full flex-row items-center justify-between bg-black py-4 px-2"
 						>
-							<span class="flex h-16 w-16 rounded-full bg-white">
+							<canvas class="block h-12 w-12 bg-white"></canvas>
+							<button
+								id="click-picture"
+								class="flex h-16 w-16 rounded-full bg-white"
+							>
 								<span
 									class="m-auto h-14 w-14 rounded-full border-2 border-black bg-white"
 								></span>
-							</span>
+							</button>
+							<button
+								id="switch-camera"
+								class="flex h-12 w-12 flex-row items-center justify-center"
+								value="user"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="h-8 w-8 text-white"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+									/>
+								</svg>
+							</button>
 						</div>
 					</div>
 
@@ -552,9 +582,9 @@
 						id="settings"
 						class="hidden h-full w-full overflow-auto bg-gray-100"
 					>
-						<p class="border-b border-gray-400 p-2 text-center font-medium">
+						<h2 class="border-b border-gray-400 p-2 text-center font-medium">
 							Settings
-						</p>
+						</h2>
 						<ul>
 							<li
 								class="flex flex-row items-start justify-start border-b border-gray-400 p-2"
@@ -577,7 +607,7 @@
 									</svg>
 								</span>
 								<div class="ml-3">
-									<p class="font-medium">About phone</p>
+									<h3 class="font-medium">About phone</h3>
 									<p class="text-sm text-gray-600">
 										rPhone is a flagship smartphone designed by Royston
 										Rodrigues. It has been made using the latest technologies
@@ -603,7 +633,7 @@
 									</svg>
 								</span>
 								<div class="ml-3">
-									<p class="font-medium">Version</p>
+									<h3 class="font-medium">Version</h3>
 									<p class="text-sm text-gray-600">1.0.0</p>
 								</div>
 							</li>
@@ -623,7 +653,7 @@
 									</svg>
 								</span>
 								<div class="ml-3">
-									<p class="font-medium">Theme</p>
+									<h3 class="font-medium">Theme</h3>
 									<div
 										class="mt-2 flex flex-row items-center justify-start space-x-2"
 									>
@@ -650,9 +680,9 @@
 
 					<!-- Message (blog) page -->
 					<div id="blog" class="hidden h-full w-full overflow-auto bg-gray-100">
-						<p class="border-b border-gray-400 p-2 text-center font-medium">
+						<h2 class="border-b border-gray-400 p-2 text-center font-medium">
 							Messages
-						</p>
+						</h2>
 						<ul>
 							<li
 								class="flex w-full flex-row items-start justify-start border-b border-gray-400 p-2"
@@ -677,7 +707,7 @@
 									<div
 										class="flex flex-row items-center justify-between space-x-2"
 									>
-										<p class="font-medium">My new portfolio</p>
+										<h3 class="font-medium">My new portfolio</h3>
 										<span class="text-xs text-gray-400">12-12-2022</span>
 									</div>
 									<p class="mt-2 text-sm text-gray-600">
@@ -712,7 +742,7 @@
 									/>
 								</svg>
 							</span>
-							<p class="w-full text-sm font-medium">Skills</p>
+							<h2 class="w-full text-sm font-medium">Skills</h2>
 							<span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -750,7 +780,7 @@
 									<img src="html.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">HTML</p>
+									<h3 class="font-medium">HTML</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Markup language
 									</p>
@@ -780,7 +810,7 @@
 									<img src="css.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">CSS</p>
+									<h3 class="font-medium">CSS</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Stylesheet language
 									</p>
@@ -810,7 +840,7 @@
 									<img src="js.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">Javascript</p>
+									<h3 class="font-medium">Javascript</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Programming language
 									</p>
@@ -840,7 +870,7 @@
 									<img src="react.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">React.js</p>
+									<h3 class="font-medium">React.js</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; JS library &#x2022; User interfaces
 									</p>
@@ -870,7 +900,7 @@
 									<img src="nodejs.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">Node.js</p>
+									<h3 class="font-medium">Node.js</h3>
 									<p class="py-1 text-xs text-gray-600">&#x2022; JS Runtime</p>
 									<p
 										class="flex flex-row items-center justify-start space-x-1 text-gray-600"
@@ -899,7 +929,7 @@
 								</div>
 
 								<div class="ml-3">
-									<p class="font-medium">Python</p>
+									<h3 class="font-medium">Python</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Programming langauge
 									</p>
@@ -929,7 +959,7 @@
 									<img src="java.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">Java</p>
+									<h3 class="font-medium">Java</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Programming language
 									</p>
@@ -959,7 +989,7 @@
 									<img src="mysql.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">MySQL</p>
+									<h3 class="font-medium">MySQL</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Database &#x2022; RDBMS
 									</p>
@@ -989,7 +1019,7 @@
 									<img src="mongodb.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">MongoDB</p>
+									<h3 class="font-medium">MongoDB</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Database &#x2022; NoSQL
 									</p>
@@ -1019,7 +1049,7 @@
 									<img src="spring.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">Spring</p>
+									<h3 class="font-medium">Spring</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Web framework &#x2022; Java
 									</p>
@@ -1049,7 +1079,7 @@
 									<img src="docker.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">Docker</p>
+									<h3 class="font-medium">Docker</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; OS Virtualization &#x2022; Containers
 									</p>
@@ -1079,7 +1109,7 @@
 									<img src="git.webp" alt="" class="block h-12 w-12" />
 								</div>
 								<div class="ml-3">
-									<p class="font-medium">Git</p>
+									<h3 class="font-medium">Git</h3>
 									<p class="py-1 text-xs text-gray-600">
 										&#x2022; Version control
 									</p>
@@ -1112,17 +1142,17 @@
 						id="projects"
 						class="hidden h-full w-full overflow-auto bg-gray-100"
 					>
-						<p
+						<h2
 							class="sticky top-0 border-b border-gray-400 bg-gray-100 p-2 text-2xl font-medium"
 						>
 							File manager
-						</p>
+						</h2>
 						<ul>
 							<li class="p-2">
 								<div class="shadow">
 									<img src="ocp.webp" alt="" class="block h-32 w-full" />
 									<div class="bg-white p-2">
-										<p class="font-medium">Oracle Certified Professional</p>
+										<h3 class="font-medium">Oracle Certified Professional</h3>
 										<p class="mt-2 text-sm text-gray-600">
 											Java SE 11 Developer (1Z0-819)
 										</p>
@@ -1133,7 +1163,7 @@
 								<div class="shadow">
 									<img src="cloudchat.webp" alt="" class="block h-32 w-full" />
 									<div class="bg-white p-2">
-										<p class="font-medium">Cloudchat - Social Media App</p>
+										<h3 class="font-medium">Cloudchat - Social Media App</h3>
 										<p class="mt-2 text-sm text-gray-600">
 											Cloudchat is a social media app that allows users to
 											create custom chat rooms and have conversations with
@@ -1148,7 +1178,9 @@
 								<div class="shadow">
 									<img src="pokepedia.webp" alt="" class="block h-32 w-full" />
 									<div class="bg-white p-2">
-										<p class="font-medium">Pokepedia - Pokemon Encyclopedia</p>
+										<h3 class="font-medium">
+											Pokepedia - Pokemon Encyclopedia
+										</h3>
 										<p class="mt-2 text-sm text-gray-600">
 											Pokepedia allows users to search for their favourite
 											Pokemon and get various statistical information about them
@@ -1205,14 +1237,14 @@
 							</div>
 						</div>
 						<div class="mx-2 my-4 border-b border-gray-400">
-							<p class="text-xl text-blue-700">Royston Rodrigues</p>
+							<h2 class="text-xl text-blue-700">Royston Rodrigues</h2>
 							<p class="py-2 text-sm">
 								Hello, I'm royston rodrigues. I'm a software engineer and full
 								stack web developer.
 							</p>
 						</div>
 						<div class="mx-2 my-4 border-b border-gray-400">
-							<p class="text-xl text-blue-700">About Me</p>
+							<h2 class="text-xl text-blue-700">About Me</h2>
 							<p class="py-2 text-sm">
 								I'm a software engineer and full stack web developer who loves
 								learning new technologies and build stuff with it. I love
@@ -1222,13 +1254,13 @@
 							</p>
 						</div>
 						<div class="mx-2 my-4 border-b border-gray-400">
-							<p class="text-xl text-blue-700">Work Experience</p>
+							<h2 class="text-xl text-blue-700">Work Experience</h2>
 							<p class="py-2 text-sm">
 								Currently working as a software engineer at LTIMindtree
 							</p>
 						</div>
 						<div class="mx-2 my-4 border-b border-gray-400">
-							<p class="text-xl text-blue-700">Professional Certifications</p>
+							<h2 class="text-xl text-blue-700">Professional Certifications</h2>
 							<p class="py-2 text-sm">
 								Oracle certified professional - Java SE 11 Developer (1Z0-819)
 							</p>

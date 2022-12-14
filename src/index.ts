@@ -1,6 +1,6 @@
 import { turnPhone } from './turn-phone';
 import { getTime, getDay, getDate } from './date-time';
-import { startCamera, stopCamera } from './camera';
+import { startCamera, stopCamera, clickPicture } from './camera';
 import { getTheme, setTheme } from './theme';
 
 // Add event listener to turn phone button
@@ -43,7 +43,9 @@ document.getElementById('camera-icon')?.addEventListener('click', () => {
 	document.getElementById('top-components')?.classList.toggle('bg-black');
 	document.getElementById('navigation-bottom')?.classList.toggle('bg-black');
 	document.getElementById('camera')?.classList.remove('hidden');
-	startCamera();
+	startCamera(
+		(document.querySelector('#switch-camera') as HTMLButtonElement).value
+	);
 });
 
 document.getElementById('settings-icon')?.addEventListener('click', () => {
@@ -146,4 +148,25 @@ document.querySelectorAll('#toggle-theme').forEach((element) => {
 			.getElementById('mobile-front')
 			?.classList.add(getTheme().split(' ')[1]);
 	});
+});
+
+// Add event listener to click image button
+document.querySelector('#click-picture')?.addEventListener('click', () => {
+	clickPicture();
+});
+
+// Add event listener to switch camera button
+document.querySelector('#switch-camera')?.addEventListener('click', () => {
+	if (
+		(document.querySelector('#switch-camera') as HTMLButtonElement).value ===
+		'user'
+	) {
+		(document.querySelector('#switch-camera') as HTMLButtonElement).value =
+			'environment';
+		startCamera('environment');
+	} else {
+		(document.querySelector('#switch-camera') as HTMLButtonElement).value =
+			'user';
+		startCamera('user');
+	}
 });
